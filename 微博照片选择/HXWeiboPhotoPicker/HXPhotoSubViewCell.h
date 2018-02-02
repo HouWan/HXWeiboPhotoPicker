@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+
+#if __has_include(<SDWebImage/UIImageView+WebCache.h>)
+#import <SDWebImage/UIImageView+WebCache.h>
+#else
 #import "UIImageView+WebCache.h"
+#endif
 
 @protocol HXPhotoSubViewCellDelegate <NSObject>
 
